@@ -4,6 +4,7 @@ import MessageForm from './MessageForm';
 import { ChatCard } from 'react-chat-engine';
 
 const ChatFeed = (props) => {
+  console.log(props)
   const { chats, activeChat, userName, messages } = props;
 
   const chat = chats && chats[activeChat];
@@ -49,7 +50,7 @@ const ChatFeed = (props) => {
       <div className="chat-title-container">
         <div className="chat-title">{chat?.title}</div>
         <div className="chat-subtitle">
-          {chat.people.map((person) => ` ${person.person.username}`)}
+          {chat.people.map((person,index) => ` ${person.person.username} ${(index < chat.people.length-1)?'|':''}`)}
         </div>
       </div>
       {renderMessages()}
