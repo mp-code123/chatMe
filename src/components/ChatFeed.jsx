@@ -1,6 +1,7 @@
 import MyMessage from './MyMessage';
 import TheirMessage from './TheirMessage';
 import MessageForm from './MessageForm';
+import { ChatCard } from 'react-chat-engine';
 
 const ChatFeed = (props) => {
   const { chats, activeChat, userName, messages } = props;

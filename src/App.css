@@ -206,7 +206,7 @@
   }
   
   /* FORM STYLES */
-  *,
+  /* *,
   *::after,
   *::before {
     margin: 0;
@@ -217,7 +217,7 @@
   
   .wrapper {
     height: 100vh;
-      width: 100%;
+    width: 100%;
     background: rgb(117,84,160);
     background: linear-gradient(90deg, rgba(117,84,160,1) 7%, rgba(117,84,160,1) 17%, rgba(106,95,168,1) 29%, rgba(99,103,174,1) 44%, rgba(87,116,184,1) 66%, rgba(70,135,198,1) 83%, rgba(44,163,219,1) 96%, rgba(22,188,237,1) 100%, rgba(0,212,255,1) 100%);  
     display: flex;
@@ -228,7 +228,7 @@
   .input {
     color: #333;
     font-size: 1.2rem;
-      margin: 0 auto;
+    margin: 0 auto;
     padding: 1.5rem 2rem;
     border-radius: 0.2rem;
     background-color: rgb(255, 255, 255);
@@ -288,4 +288,37 @@
   .button:hover span:after {
     opacity: 1;
     right: 0;
+  } */
+  /* login css updated */
+  .wrapper{
+    max-width: 350px;
+    margin: 100px auto;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
+  
+  .login-form input {
+    width: 91%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3B2A50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* .login-form button:hover {
+    background-color: #357ae8;
+  } */
+  

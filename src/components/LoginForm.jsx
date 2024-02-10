@@ -22,24 +22,25 @@ const LoginForm = () => {
       window.location.reload();
       setError('');
     } catch (err) {
-      setError('Oops, incorrect credentials.');
+      setError('invalid credentials.');
     }
   };
 
   return (
     <div className="wrapper">
       <div className="form">
-        <h1 className="title">Chat Application</h1>
-        <form onSubmit={handleSubmit}>
+        <h1 className="title" style={{color: '#3B2A50'}}>Chat Me</h1>
+        <form onSubmit={handleSubmit} className='login-form'>
+          
           <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeholder="Username" required />
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password" required />
-          <div align="center">
+          {/* <div align="center"> */}
             <button type="submit" className="button">
               <span>Start chatting</span>
             </button>
-          </div>
+          {/* </div> */}
         </form>
-        <h1>{error}</h1>
+        <h1 style={{color:'red'}}>{error}</h1>
       </div>
     </div>
 
